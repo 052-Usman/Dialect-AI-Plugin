@@ -1,0 +1,114 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="dialect-ai-container">
+  <div class="dialect-ai-circle" id="dialect-ai-chatbot-toggle-button">
+    <img class="dialect-ai-chat-btn" src="{{ url_for('static', filename='images/chat-dots.svg') }}" alt="" />
+  </div>
+
+  <div id="dialect-ai-custom-chatbot" class="dialect-ai-chatbot-closed">
+    <div class="dialect-ai-chatbot-header dialect-ai-desc">
+      <span>
+        <img class="dialect-ai-logo" src="{{ url_for('static', filename='images/Logo-1-White-Circle.PNG') }}" alt="" />
+      </span>
+      <span> Chat with us! </span>
+
+      <span class="dialect-ai-svg">
+        <svg
+          id="dialect-ai-close-menu"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#FFFFFF"
+          class="bi bi-x"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </span>
+    </div>
+
+    <div class="dialect-ai-body">
+      <div class="dialect-ai-initial-content">
+        <div class="dialect-ai-offwhite-back">
+          <div class="dialect-ai-desc1">
+            Hello 👋 Nice to see you here! Please enter your email address you will be able to chat with Dialect AI Agent 🤖.
+          </div>
+
+          <div class="dialect-ai-start-btn">
+            <input
+              type="text"
+              class="dialect-ai-input-email"
+              placeholder="Enter your email address"
+              id="dialect-ai-user-email"
+            />
+
+            <p id="dialect-ai-invalid-email" class="dialect-ai-error">
+              Invalid email address
+            </p>
+
+            <button class="dialect-ai-btn" id="dialect-ai-start-chat">Start Chat</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialect-ai-chatbot-content">
+        <div id="dialect-ai-chatbox">
+          <div class="dialect-ai-message-tabs">
+            <div class="dialect-ai-left-back">
+              <span class="dialect-ai-system-message-back">
+                Natuurlijk! 👋 Hoe kan ik je vandaag helpen? ✨
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="dialect-ai-body-bottom">
+          <input
+            type="text"
+            id="dialect-ai-user-input"
+            class="dialect-ai-form-control"
+            placeholder="Type your message..."
+            autocomplete="off"
+          />
+         
+          <div
+            class="dialect-ai-send"
+            style="
+              height: 38px;
+              align-self: center;
+              display: flex;
+              align-items: center;
+            "
+            id="dialect-ai-send-button"
+          >
+          
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+               class="bi bi-x"
+              width="27px"
+              height="24px"
+              viewBox="0 0 512 512"
+              style="color: rgb(186, 186, 186)"
+            >
+              <path
+                d="M470.3 271.15L43.16 447.31a7.83 7.83 0 01-11.16-7V327a8 8 0 016.51-7.86l247.62-47c17.36-3.29 17.36-28.15 0-31.44l-247.63-47a8 8 0 01-6.5-7.85V72.59c0-5.74 5.88-10.26 11.16-8L470.3 241.76a16 16 0 010 29.39z"
+                fill="#ffff"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+        
+          </div>
+          <!-- <button class="dialect-ai-btn" id="dialect-ai-send-button">Send</button> -->
+         
+        </div>
+      </div>
+    </div>
+    <div class="dialect-ai-footer" >
+      Powered by Dialect-AI.
+    </div>
+  </div>
+</div>
